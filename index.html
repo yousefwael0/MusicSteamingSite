@@ -3,22 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <title>MyMusic – Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet"> -->
 </head>
 <body>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">MyMusic</a>
-    </div>
-  </nav>
+  
+  <div class="logo"><h2>MyMusic</h2></div>
+  <div class="nav"> <!--horizontal navigator-->
+   <a href="index.html" class="active">Home </a>
+   <a href="artists.html" class="active">Artists </a>
+   <a href="reviews.html" class="active">Reviews</a>
+   <a href="aboutus.html" class="active">About us</a>
+  </div>
 
-  <header class="text-center py-5">
-    <h1>Welcome to MyMusic</h1>
-    <p>Your free music streaming experience.</p>
-    <a href="music.html" class="btn btn-primary">Browse Music</a>
-    <a href="login.html" class="btn btn-outline-light">Login</a>
-  </header>
+  <button class="loginbtn" onclick="window.location.href='login.html'">Login</button>
+
+  <h1>Browse Categories</h1>
+  <div class="categories">
+    <button class="category-active">All</button>
+    <button class="category">Romantic</button><!--Ma meilleure Ennemie, Ajmal ihsas, Call out my name-->
+    <button class="category">Toxic</button><!--heartless, ajmal ihsas, what could have been-->
+    <button class="category">Rock</button><!--wild flower-->
+    <button class="category">Classical</button><!--hathor, The phantom of the opera-->
+    <button class="category">Pop</button><!--Ma Meilleure Ennemie, enemy, wild flower-->
+  </div>
+</div>
+
+  <div class="music-card">
+    <img src="images/weeknd1.jpg" alt="Music Cover" class="music-img">
+    <div class="music-info">
+        <div class="music-title">Call out my Name</div>
+        <div class="music-artist"><a href="artists.html">The Weeknd</a></div  >
+    </div>
+  </div>
+
+<div class="music-card">
+  <img src="images/arcane1.jpg" alt="Music Cover" class="music-img">
+  <div class="music-info">
+      <div class="music-title">Ma Meilleure Ennemie</div>
+      <div class="music-artist"><a href="artists.html">Stormae & Pomme, League of Legends</a></div  >
+  </div>
+</div>
+
+<div class="music-card">
+  <img src="images/elissa.jpg" alt="Music Cover" class="music-img">
+  <div class="music-info">
+      <div class="music-title">Ajmal Ihsas</div>
+      <div class="music-artist"><a href="artists.html">Elissa</a></div  >
+  </div>
+</div>
+
+<div class="music-card">
+  <img src="images/weeknd2.jpg" alt="Music Cover" class="music-img">
+  <div class="music-info">
+      <div class="music-title">Heartless</div>
+      <div class="music-artist"><a href="artists.html">The Weeknd</a></div  >
+  </div>
+</div>
+
+<div class="music-card">
+  <img src="images/lana1.jpg" alt="Music Cover" class="music-img">
+  <div class="music-info">
+      <div class="music-title">High by the beach</div>
+      <div class="music-artist"><a href="artists.html">Lana Del Rey</a></div  >
+  </div>
+</div>
+
+<div class="music-card">
+  <img src="images/hathor.jpg" alt="Music Cover" class="music-img">
+  <div class="music-info">
+      <div class="music-title">Hathor Frequency</div>
+  </div>
+</div>
+
+<div class="music-card">
+  <img src="images/billie.jpg" alt="Music Cover" class="music-img">
+  <div class="music-info">
+      <div class="music-title">Wild Flower</div>
+      <div class="music-artist"><a href="artists.html">Billie Eilish</a></div  >
+  </div>
+</div>
+
+<div class="music-card">
+  <img src="images/PhantomOfTheOpera.jpg" alt="Music Cover" class="music-img">
+  <div class="music-info">
+      <div class="music-title">The phantom of the opera</div>
+  </div>
+</div>
+
+<div class="music-card">
+  <img src="images/arcane1.jpg" alt="Music Cover" class="music-img">
+  <div class="music-info">
+      <div class="music-title">Enemy</div>
+      <div class="music-artist"><a href="artists.html">Imagine Dragons, League of Legends</a></div  >
+  </div>
+</div>
+
+<div class="music-card">
+  <img src="images/arcane1.jpg" alt="Music Cover" class="music-img">
+  <div class="music-info">
+      <div class="music-title">What Could have been</div>
+      <div class="music-artist"><a href="artists.html">Sting and Rey Chen, League of Legends</a></div  >
+  </div>
+</div>
+
 
   <footer class="text-center py-4 bg-dark text-white">© 2025 MyMusic</footer>
 </body>
