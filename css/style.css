@@ -11,7 +11,9 @@ body {
     color: #ffffff;
 }
 
-      .search-container {
+
+/*Home Page*/
+.search-container {
   position: relative;
   display: flex;
   align-items: center;
@@ -64,7 +66,7 @@ body {
   align-items: center;
    padding: 0.5rem 2rem;
   background-color: #1c1b1b; 
- position: fixed; /* Makes navbar stick to viewport */
+  position:fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -90,7 +92,6 @@ body {
     transition:  background-color 0.3s;
      white-space: nowrap;
 }
-
 
 .nav a:hover{
   color: #1DB954;
@@ -186,5 +187,7 @@ padding: 1rem;
       color: #15a46d;     
   text-decoration: none;                    
 }
+
+/*Login Page*/
 
 
