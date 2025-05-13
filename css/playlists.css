@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background similar to Spotify */
+    color: white;
+  }
+  
+  /* Navbar Styles */
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 2rem;
+    background-color: #121212;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .nav {
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    margin: 0 1rem;
+  }
+  
+  .nav a {
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 1rem;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #1DB954;
+  }
+  
+  .nav a.active {
+    background-color: #000000;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1DB954;
+    margin-right: auto;
+  }
+  
+  .loginbtn {
+    background-color: #1DB954;
+    color: #000000;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .loginbtn:hover {
+    background-color: #2ee26d;
+  }
+  
+  
+  
+  
+  /* Playlists Section */
+  .playlists-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  
+  .playlist-card {
+    width: 22%; /* might be too wide for small screens */
+    min-width: 200px; /* Optional: ensure cards don’t shrink too much */
+    max-width: 250px;
+    margin: 10px;
+    background-color: #181818;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  
+  .playlist-card:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  .playlist-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .playlist-name {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #121212; /* Dark background for the name */
+  }
+  
+  .playlist-card:hover .playlist-name {
+    background-color: #1db954; /* Highlighted on hover */
+  }
+  
+  /* Songs List Section */
+  .songs-list {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1d1d1d;
+    border-radius: 8px;
+  }
+  
+  .songs-list .song {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #121212;
+    border-radius: 6px;
+  }
+  
+  .songs-list .song img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  
+  .songs-list .song .song-info {
+    flex-grow: 1;
+  }
+  
+  .songs-list .song .song-title {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .songs-list .song .song-artist {
+    font-size: 0.9rem;
+    color: #a3a3a3;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  

@@ -1,0 +1,82 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and background */
+  body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Container styling */
+  .auth-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #181818;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Header text */
+  h2 {
+    font-weight: bold;
+    color: #1DB954;
+  }
+  
+  /* Muted text */
+  .text-muted {
+    color: #b3b3b3 !important;
+  }
+  
+  /* Labels */
+  label {
+    color: #e0e0e0;
+  }
+  
+  /* Inputs */
+  input.form-control {
+    background-color: #282828;
+    color: #ffffff;
+    border: 1px solid #444;
+  }
+  
+  input.form-control:focus {
+    background-color: #1e1e1e;
+    border-color: #1DB954;
+    color: #ffffff;
+  }
+  
+  /* Checkboxes */
+  .form-checkbox input {
+    margin-right: 5px;
+  }
+  
+  /* Buttons */
+  .submit-btn {
+    background-color: #1DB954 !important;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #1ed760 !important;
+  }
+  
+  /* Link styles */
+  a {
+    color: #1DB954;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

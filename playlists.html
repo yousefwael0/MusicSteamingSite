@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlists</title>
+  <link rel="stylesheet" href="css/playlists.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="logo"><h2>MyMusic</h2></div>
+    <div class="nav"> <!--horizontal navigator-->
+     <a href="index.html" class="active">Home </a>
+     <a href="artists.html" class="active">Artists </a>
+     <a href="playlists.html" class = "active">Playlist</a> 
+     <a href="reviews.html" class="active">Reviews</a>
+     <a href="aboutus.html" class="active">About us</a>
+    </div>
+  
+    <button class="loginbtn" onclick="window.location.href='login.html'">Login</button>
+  </nav>
+  
+
+  
+
+  <!-- Playlists Section -->
+  <div class="playlists-container">
+    <div class="playlist-card" onclick="showSongs('playlist1')">
+      <img src="images/Party.jpg" alt="Playlist 1">
+      <div class="playlist-name">Party</div>
+    </div>
+    <div class="playlist-card" onclick="showSongs('playlist2')">
+      <img src="images/Car-ride.jpg" alt="Playlist 2">
+      <div class="playlist-name">Car ride</div>
+    </div>
+    <div class="playlist-card" onclick="showSongs('playlist3')">
+      <img src="images/Study.jpg" alt="Playlist 3">
+      <div class="playlist-name">Study</div>
+    </div>
+    <div class="playlist-card" onclick="showSongs('playlist4')">
+      <img src="images/images for artists/lana1.jpg" alt="Playlist 4">
+      <div class="playlist-name">Classical</div>
+    </div>
+  </div>
+
+  <!-- Songs List Section -->
+  <div id="songs-list" class="songs-list">
+    <!-- Songs will be dynamically inserted here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
