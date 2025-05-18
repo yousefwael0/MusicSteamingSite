@@ -351,3 +351,8 @@ body {
 .auth-container a:hover {
   text-decoration: underline;
 }
+
+.auth-container input.form-control::placeholder {
+  color: #bbb;
+  opacity: 1;
+}
