@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     reviews.forEach(review => {
       const div = document.createElement('div');
-      div.className = 'card';
+      div.className = 'review-box';
       div.innerHTML = `
         <strong>${review.name}</strong> <em>(${new Date(review.timestamp).toLocaleString()})</em>
         <p class="card-text">${review.text}</p>

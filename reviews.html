@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>MyMusic – Reviews</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/reviews.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 </head>
+
 <body>
 
   <!-- Navigation -->
   <nav id="navbar">
-    <div class="logo"><h2>MyMusic</h2></div>
+    <div class="logo">
+      <h2>MyMusic</h2>
+    </div>
     <div class="nav">
-      <a href="index.html">Home</a>
-      <a href="artists.html">Artists</a>
-      <a href="playlists.html">Playlist</a> 
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="artists.html" class="nav-link">Artists</a>
+      <a href="playlists.html" class="nav-link">Playlist</a>
       <a href="reviews.html" class="active">Reviews</a>
-      <a href="aboutus.html">About us</a>
+      <a href="aboutus.html" class="nav-link">About us</a>
     </div>
     <button class="loginbtn" onclick="window.location.href='login.html'">Login</button>
   </nav>
 
-  <div class="container mt-5">
-    <h2 class="mb-4">User Reviews</h2>
+  <!-- Review Section -->
+  <div class="container py-5">
+    <h2 class="mb-4 text-center" style="color: #1DB954;">User Reviews</h2>
 
     <!-- Add Review -->
     <div class="mb-4">
-      <input type="text" id="username" class="form-control mb-2" placeholder="Enter your name">
-      <textarea id="reviewText" class="form-control mb-2" rows="3" placeholder="Write your review..."></textarea>
-      <button id="submitReview" class="btn btn-primary">Submit Review</button>
+      <input type="text" id="username" class="form-control bg-dark text-white border-0 mb-2"
+        placeholder="Enter your name">
+      <textarea id="reviewText" class="form-control bg-dark text-white border-0 mb-2" rows="3"
+        placeholder="Write your review..."></textarea>
+      <button id="submitReview" class="btn btn-success">Submit Review</button>
     </div>
 
     <!-- Display Reviews -->
@@ -37,8 +44,9 @@
     </div>
   </div>
 
-  <footer class="text-center py-4 bg-dark text-white mt-5">© 2025 MyMusic</footer>
+  <footer class="text-center py-4 bg-dark text-white">© 2025 MyMusic</footer>
 
   <script src="js/reviews.js"></script>
 </body>
+
 </html>

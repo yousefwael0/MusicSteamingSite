@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>MyMusic – Home</title>
@@ -7,36 +8,36 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-
-
-
 <body>
 
   <nav id="navbar">
-  <div class="logo"><h2>MyMusic</h2></div>
-  <div class="nav"> <!--horizontal navigator-->
-   <a href="index.html" class="active">Home </a>
-   <a href="artists.html" class="active">Artists </a>
-   <a href="playlists.html" class = "active">Playlist</a> 
-   <a href="reviews.html" class="active">Reviews</a>
-   <a href="aboutus.html" class="active">About us</a>
+    <div class="logo">
+      <h2>MyMusic</h2>
+    </div>
+    <div class="nav"> <!--horizontal navigator-->
+      <a href="index.html" class="active">Home </a>
+      <a href="artists.html" class="nav-link">Artists </a>
+      <a href="playlists.html" class="nav-link">Playlist</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+      <a href="aboutus.html" class="nav-link">About us</a>
+    </div>
+
+    <button class="loginbtn" onclick="window.location.href='login.html'">Login</button>
+  </nav>
+
+  <div class="search-container">
+    <input type="text" class="search-bar" placeholder="Search for music...">
+    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
   </div>
 
-  <button class="loginbtn" onclick="window.location.href='login.html'">Login</button>
-</nav>
 
-<div class="search-container">
-  <input type="text" class="search-bar" placeholder="Search for music...">
-  <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="11" cy="11" r="8"></circle>
-    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-  </svg>
-</div>
-
-
-  =<!-- Categories -->
+  <!-- Categories -->
   <div class="categories">
-    <button class="category-active" onclick="filterByCategory('all')">All</button>
+    <button class="category category-active" onclick="filterByCategory('all')">All</button>
     <button class="category" onclick="filterByCategory('romantic')">Romantic</button>
     <button class="category" onclick="filterByCategory('toxic')">Toxic</button>
     <button class="category" onclick="filterByCategory('rock')">Rock</button>
@@ -46,132 +47,152 @@
 
 
 
-<div class="music-container">
-  <div class="music-card" data-category="romantic">
-    <img src="images/weeknd1.jpg" alt="Music Cover" class="music-img">
-    <div class="music-info">
+  <div class="music-container">
+    <div class="music-card" data-category="romantic">
+      <img src="images/weeknd1.jpg" alt="Music Cover" class="music-img">
+      <div class="music-info">
         <div class="music-title">Call out my Name</div>
-        <div class="music-artist"><a href="artists.html" class="plain">The Weeknd</a></div  >
+        <div class="music-artist"><a href="artists.html" class="plain">The Weeknd</a></div>
+      </div>
     </div>
+
+    <div class="music-card" data-category="romantic">
+      <img src="images/arcane1.jpg" alt="Music Cover" class="music-img">
+      <div class="music-info">
+        <div class="music-title">Ma Meilleure Ennemie</div>
+        <div class="music-artist"><a href="artists.html" class="plain">Stormae & Pomme, League of Legends</a></div>
+      </div>
+    </div>
+
+    <div class="music-card" data-category="toxic">
+      <img src="images/images for artists/elissa.jpg" alt="Music Cover" class="music-img">
+      <div class="music-info">
+        <div class="music-title">Ajmal Ihsas</div>
+        <div class="music-artist"><a href="artists.html" class="plain">Elissa</a></div>
+      </div>
+    </div>
+
+    <div class="music-card" data-category="toxic">
+      <img src="images/images for artists/weeknd2.jpg" alt="Music Cover" class="music-img">
+      <div class="music-info">
+        <div class="music-title">Heartless</div>
+        <div class="music-artist"><a href="artists.html" class="plain">The Weeknd</a></div>
+      </div>
+    </div>
+
+    <div class="music-card" data-category="rock">
+      <img src="images/images for artists/lana1.jpg" alt="Music Cover" class="music-img">
+      <div class="music-info">
+        <div class="music-title">High by the beach</div>
+        <div class="music-artist"><a href="artists.html" class="plain">Lana Del Rey</a></div>
+      </div>
+    </div>
+
+    <div class="music-card" data-category="classical">
+      <img src="images/hathor.jpg" alt="Music Cover" class="music-img">
+      <div class="music-info">
+        <div class="music-title">Hathor Frequency</div>
+      </div>
+    </div>
+
+    <div class="music-card" data-category="pop">
+      <img src="images/arcane1.jpg" alt="Music Cover" class="music-img">
+      <div class="music-info">
+        <div class="music-title">What Could have been</div>
+        <div class="music-artist"><a href="artists.html" class="plain">Sting and Rey Chen, League of Legends</a></div>
+      </div>
+    </div>
+
+    <div class="music-card" data-category="pop">
+      <img src="images/images for artists/billie.jpg" alt="Music Cover" class="music-img">
+      <div class="music-info">
+        <div class="music-title">Wild Flower</div>
+        <div class="music-artist"><a href="artists.html" class="plain">Billie Eilish</a></div>
+      </div>
+    </div>
+
+    <div class="music-card" data-category="classical">
+      <img src="images/PhantomOfTheOpera.jpg" alt="Music Cover" class="music-img">
+      <div class="music-info">
+        <div class="music-title">The phantom of the opera</div>
+      </div>
+    </div>
+
+    <div class="music-card" data-category="pop">
+      <img src="images/arcane1.jpg" alt="Music Cover" class="music-img">
+      <div class="music-info">
+        <div class="music-title">Enemy</div>
+        <div class="music-artist"><a href="artists.html" class="plain">Imagine Dragons, League of Legends</a></div>
+      </div>
+    </div>
+
+
   </div>
-
-<div class="music-card" data-category="romantic">
-  <img src="images/arcane1.jpg" alt="Music Cover" class="music-img">
-  <div class="music-info">
-      <div class="music-title">Ma Meilleure Ennemie</div>
-      <div class="music-artist"><a href="artists.html"class="plain">Stormae & Pomme, League of Legends</a></div  >
-  </div>
-</div>
-
-<div class="music-card" data-category="toxic">
-  <img src="images/images for artists/elissa.jpg" alt="Music Cover" class="music-img">
-  <div class="music-info">
-      <div class="music-title">Ajmal Ihsas</div>
-      <div class="music-artist"><a href="artists.html"class="plain">Elissa</a></div  >
-  </div>
-</div>
-
-<div class="music-card" data-category="toxic">
-  <img src="images/images for artists/weeknd2.jpg" alt="Music Cover" class="music-img">
-  <div class="music-info">
-      <div class="music-title">Heartless</div>
-      <div class="music-artist"><a href="artists.html"class="plain">The Weeknd</a></div  >
-  </div>
-</div>
-
-<div class="music-card" data-category="rock">
-  <img src="images/images for artists/lana1.jpg" alt="Music Cover" class="music-img">
-  <div class="music-info">
-      <div class="music-title">High by the beach</div>
-      <div class="music-artist"><a href="artists.html"class="plain">Lana Del Rey</a></div  >
-  </div>
-</div>
-
-<div class="music-card" data-category="classical">
-  <img src="images/hathor.jpg" alt="Music Cover" class="music-img">
-  <div class="music-info">
-      <div class="music-title">Hathor Frequency</div>
-  </div>
-</div>
-
-<div class="music-card" data-category="pop">
-  <img src="images/arcane1.jpg" alt="Music Cover" class="music-img">
-  <div class="music-info">
-      <div class="music-title">What Could have been</div>
-      <div class="music-artist"><a href="artists.html"class="plain">Sting and Rey Chen, League of Legends</a></div  >
-  </div>
-</div>
-
-<div class="music-card" data-category="pop">
-  <img src="images/images for artists/billie.jpg" alt="Music Cover" class="music-img">
-  <div class="music-info">
-      <div class="music-title">Wild Flower</div>
-      <div class="music-artist"><a href="artists.html"class="plain">Billie Eilish</a></div  >
-  </div>
-</div>
-
-<div class="music-card" data-category="classical">
-  <img src="images/PhantomOfTheOpera.jpg" alt="Music Cover" class="music-img">
-  <div class="music-info">
-      <div class="music-title">The phantom of the opera</div>
-  </div>
-</div>
-
-<div class="music-card" data-category="pop">
-  <img src="images/arcane1.jpg" alt="Music Cover" class="music-img">
-  <div class="music-info">
-      <div class="music-title">Enemy</div>
-      <div class="music-artist"><a href="artists.html"class="plain">Imagine Dragons, League of Legends</a></div  >
-  </div>
-</div>
-
-
-</div>
 
   <footer class="text-center py-4 bg-dark text-white">© 2025 MyMusic</footer>
 
   <script>
-    // Function to handle the search when the icon is clicked
     function handleSearch() {
       const searchInput = document.querySelector('.search-bar').value.toLowerCase();
       const musicCards = document.querySelectorAll('.music-card');
-      
+
       musicCards.forEach(card => {
         const musicTitle = card.querySelector('.music-title').textContent.toLowerCase();
-        if (musicTitle.includes(searchInput)) {
-          card.style.display = 'block'; // Show card
+        const musicArtist = card.querySelector('.music-artist')?.textContent.toLowerCase() || "";
+
+        if (musicTitle.includes(searchInput) || musicArtist.includes(searchInput)) {
+          card.style.display = 'block';
         } else {
-          card.style.display = 'none'; // Hide card
+          card.style.display = 'none';
         }
       });
     }
 
-    // Function to filter music cards based on category
     function filterByCategory(category) {
       const musicCards = document.querySelectorAll('.music-card');
-      
+
       musicCards.forEach(card => {
         const cardCategory = card.getAttribute('data-category');
-        
+
         if (category === 'all' || cardCategory === category) {
-          card.style.display = 'block'; // Show card if category matches or 'all' is selected
+          card.style.display = 'block';
         } else {
-          card.style.display = 'none'; // Hide card if category doesn't match
+          card.style.display = 'none';
         }
       });
+
+      // Save selected category to localStorage
+      localStorage.setItem('selectedCategory', category);
     }
 
-    // Event listener for the search icon
     document.querySelector('.search-icon').addEventListener('click', handleSearch);
+    document.querySelector('.search-bar').addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') handleSearch();
+    });
 
-    // Event listeners for category buttons
     const categoryButtons = document.querySelectorAll('.category');
+
     categoryButtons.forEach(button => {
       button.addEventListener('click', () => {
-        const category = button.textContent.toLowerCase(); // Get the category from button text
-        filterByCategory(category); // Filter cards based on selected category
+        categoryButtons.forEach(btn => btn.classList.remove('category-active'));
+        button.classList.add('category-active');
+
+        const category = button.textContent.toLowerCase();
+        filterByCategory(category);
       });
     });
+
+    // On page load: restore last selected category or default to 'all'
+    const savedCategory = localStorage.getItem('selectedCategory') || 'all';
+    categoryButtons.forEach(button => {
+      if (button.textContent.toLowerCase() === savedCategory) {
+        button.classList.add('category-active');
+      } else {
+        button.classList.remove('category-active');
+      }
+    });
+    filterByCategory(savedCategory);
   </script>
 </body>
+
 </html>
